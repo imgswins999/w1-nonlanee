@@ -249,7 +249,7 @@ class SecondPage extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  padding:EdgeInsets.only(left: 20) ,
+                  padding: EdgeInsets.only(left: 20),
                   child: ClipOval(
                     child: Image.network(
                       'https://play-lh.googleusercontent.com/fk4QLzT0b74DF0LHKUcWcvmNt-zPvsJt_EzMygASLOwqQKUiMq6E2EHzlQ6IGl1kTUuteX4VnzGmxS0_fjLc=w240-h480-rw',
@@ -260,16 +260,49 @@ class SecondPage extends StatelessWidget {
                 ),
                 SizedBox(width: 10),
                 Container(
-                  child: Column(children: [Text('5',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),), Text('กำลังติดตาม')]),
+                  child: Column(
+                    children: [
+                      Text(
+                        '5',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text('กำลังติดตาม',style: TextStyle(color: Colors.grey),),
+                    ],
+                  ),
                 ),
                 SizedBox(width: 10),
                 Container(
-                  child: Column(children: [Text('5M',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),), Text('ผู้ติดตาม')]),
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(border: Border.symmetric(vertical:BorderSide(color: Colors.grey.shade300,width: 2))),
+                  child: Column(
+                    children: [
+                      Text(
+                        '5M',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text('ผู้ติดตาม',style: TextStyle(color: Colors.grey),),
+                    ],
+                  ),
                 ),
                 SizedBox(width: 10),
                 Container(
                   child: Column(
-                    children: [Text('230K',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),), Text('ถูกใจและบันทึก')],
+                    children: [
+                      Text(
+                        '230K',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text('ถูกใจและบันทึก',style: TextStyle(color: Colors.grey),),
+                    ],
                   ),
                 ),
               ],
@@ -278,15 +311,26 @@ class SecondPage extends StatelessWidget {
             Container(
               width: double.infinity,
               padding: EdgeInsets.only(left: 20),
-              child: Column(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [Text('Nonlanee Uppakhut',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)],
+                children: [
+                  Text(
+                    'Nonlanee Uppakhut',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(width: 20,),
+                  Icon(Icons.verified,color: Colors.blue,)
+                ],
               ),
             ),
             Container(
               padding: EdgeInsets.only(left: 20),
               child: Row(
-                children: [Text('Nonlanee',style: TextStyle(fontSize: 16),), Icon(Icons.arrow_drop_down)],
+                children: [
+                  Icon(Icons.tiktok,size: 20,),
+                  Text('Nonlanee', style: TextStyle(fontSize: 16)),
+                  Icon(Icons.arrow_drop_down),
+                ],
               ),
             ),
             Container(
@@ -299,7 +343,6 @@ class SecondPage extends StatelessWidget {
                       onPressed: () => Navigator.pushNamed(context, '/second'),
                       child: Text('คิดตาม'),
                       style: ElevatedButton.styleFrom(
-
                         backgroundColor: Colors.blue,
                         foregroundColor: Colors.white,
                       ),
@@ -310,7 +353,7 @@ class SecondPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             Container(
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -320,9 +363,9 @@ class SecondPage extends StatelessWidget {
                     width: 200,
                     height: 200,
                   ),
-                  SizedBox(width: 10,),
+                  SizedBox(width: 10),
                   Image.network(
-                    'https://preview.redd.it/tung-tung-tung-sahur-scarab-v0-g1jafwgnupve1.jpeg?auto=webp&s=c93809c4fecf3fd4026d7933fd7767c966104825',
+                    'https://m.media-amazon.com/images/I/41eRI02902L._AC_UF1000,1000_QL80_.jpg',
                     width: 200,
                     height: 200,
                   ),
