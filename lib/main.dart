@@ -269,12 +269,18 @@ class SecondPage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text('กำลังติดตาม'),
+                      Text('กำลังติดตาม', style: TextStyle(color: Colors.grey)),
                     ],
                   ),
                 ),
                 SizedBox(width: 10),
                 Container(
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    border: Border.symmetric(
+                      vertical: BorderSide(color: Colors.grey.shade300, width: 1),
+                    ),
+                  ),
                   child: Column(
                     children: [
                       Text(
@@ -284,7 +290,7 @@ class SecondPage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text('ผู้ติดตาม'),
+                      Text('ผู้ติดตาม', style: TextStyle(color: Colors.grey)),
                     ],
                   ),
                 ),
@@ -299,7 +305,10 @@ class SecondPage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text('ถูกใจและบันทึก'),
+                      Text(
+                        'ถูกใจและบันทึก',
+                        style: TextStyle(color: Colors.grey),
+                      ),
                     ],
                   ),
                 ),
@@ -316,8 +325,8 @@ class SecondPage extends StatelessWidget {
                     'Nonlanee Uppakhut',
                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(width: 10,),
-                  Icon(Icons.verified,color: Colors.blue,)
+                  SizedBox(width: 10),
+                  Icon(Icons.verified, color: Colors.blue),
                 ],
               ),
             ),
@@ -325,13 +334,13 @@ class SecondPage extends StatelessWidget {
               padding: EdgeInsets.only(left: 20),
               child: Row(
                 children: [
-                  Icon(Icons.tiktok),
+                  Icon(Icons.tiktok, size: 20),
                   Text('Nonlanee', style: TextStyle(fontSize: 16)),
                   Icon(Icons.arrow_drop_down),
                 ],
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             Container(
               child: Row(
                 children: [
