@@ -341,7 +341,7 @@ class SecondPage extends StatelessWidget {
                     width: 350,
                     child: ElevatedButton(
                       onPressed: () => Navigator.pushNamed(context, '/second'),
-                      child: Text('คิดตาม'),
+                      child: Text('ติดตาม'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                         foregroundColor: Colors.white,
